@@ -93,10 +93,10 @@ func fixedOctetStringDecode(data []byte, shift uint8, size int, alligned bool, v
 		outData = data[size:]
 		return
 	}
-	for i := 0; i < size-1; i++ {
+	for i := 0; i < size; i++ {
 		*value = append(*value, data[i]<<(shift)|data[i+1]>>(8-shift))
 	}
 	outShift = shift
-	outData = data[size-1:]
+	outData = data[size:]
 	return
 }
