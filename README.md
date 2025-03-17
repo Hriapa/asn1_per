@@ -33,8 +33,8 @@ Example:
 ```go
     func NewConstrainedInteger(lb int, ub int, alligned bool) *ConstrainedInteger
 ```
-lb - lower band
-ub - upper band
+lb - lower band /n
+ub - upper band /n
 alligned - true:alligned format\false:not alligned format 
 
 Decoding 
